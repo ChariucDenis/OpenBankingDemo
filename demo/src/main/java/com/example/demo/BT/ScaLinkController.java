@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin(origins = {
         "http://localhost:3000", // pentru development local
-        "https://tangerine-frangollo-da6fa4.netlify.app" // frontend Netlify
+        "https://zippy-puppy-ca0446.netlify.app/" // frontend Netlify
 })
 @RestController
 @RequestMapping("/bt")
