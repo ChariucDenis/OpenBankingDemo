@@ -9,7 +9,10 @@ import org.springframework.web.client.RestTemplate;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
-
+@CrossOrigin(origins = {
+        "http://localhost:3000", // pentru development local
+        "https://tangerine-frangollo-da6fa4.netlify.app" // frontend Netlify
+})
 @RestController
 @RequestMapping("/bt")
 public class TokenController {

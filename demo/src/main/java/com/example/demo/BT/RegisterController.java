@@ -6,7 +6,10 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
 import java.util.Map;
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = {
+        "http://localhost:3000", // pentru development local
+        "https://tangerine-frangollo-da6fa4.netlify.app" // frontend Netlify
+})
 @RestController
 @RequestMapping("/bt")
 public class RegisterController {

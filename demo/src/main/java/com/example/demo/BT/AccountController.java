@@ -1,12 +1,16 @@
 package com.example.demo.BT;
 
 import org.springframework.http.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.UUID;
-
+@CrossOrigin(origins = {
+        "http://localhost:3000", // pentru development local
+        "https://tangerine-frangollo-da6fa4.netlify.app" // frontend Netlify
+})
 @RestController
 public class AccountController {
 
