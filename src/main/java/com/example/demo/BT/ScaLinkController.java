@@ -19,7 +19,7 @@ public class ScaLinkController {
             return ResponseEntity.badRequest().body("Trebuie întâi /bt/register şi /bt/consent!");
 
 
-        String redirect  = "https://google.com";
+        String redirect  = "https://openbankingdemo.onrender.com";
         String state     = "state123test";
         String nonce     = "nonce123test";
         String challenge = "atgQe5BY6w5NKbzt_Tdbeo_1MIbbK-hcnPZbbIw6f4Q";

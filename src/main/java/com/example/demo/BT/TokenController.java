@@ -56,7 +56,7 @@ public class TokenController {
         String form1 =
                 "grant_type=authorization_code" +
                         "&code="           + enc(authCode) +
-                        "&redirect_uri="   + enc(redirectUri) +
+                        "&redirect_uri="   + enc("https://openbankingdemo.onrender.com") +
                         "&code_verifier="  + enc(CODE_VERIFIER);
 
         try {
