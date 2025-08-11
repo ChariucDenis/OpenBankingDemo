@@ -10,6 +10,9 @@ public class BtContextStore {
     private String consentId;
     private String scaOauthHref;
 
+    // adăugat default redirectUri
+    private String redirectUri = "https://google.com";
+
     /* token-uri */
     private String accessToken;
     private String refreshToken;
@@ -37,7 +40,9 @@ public class BtContextStore {
     public String getClientSecret() { return clientSecret; }
     public String getConsentId()    { return consentId; }
     public String getAccessToken()  { return accessToken; }
-    public boolean hasClient()  { return clientId != null && clientSecret != null; }
-    public boolean hasConsent() { return consentId != null; }
-    /* (alte getters la nevoie) */
+    public boolean hasClient()      { return clientId != null && clientSecret != null; }
+    public boolean hasConsent()     { return consentId != null; }
+
+    // getter pentru redirectUri (default google)
+    public String getRedirectUri()  { return redirectUri; }
 }
