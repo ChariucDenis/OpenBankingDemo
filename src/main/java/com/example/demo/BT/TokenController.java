@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/bt")
+
 public class TokenController {
 
     private final RestTemplate   rest;
@@ -34,7 +34,7 @@ public class TokenController {
         this.rest = new RestTemplate(f);
     }
 
-    @PostMapping("/token")
+    @PostMapping()
     public ResponseEntity<String> exchangeCode(@RequestBody Map<String,String> body) throws Exception {
 
         String authCode = body.get("auth_code");
